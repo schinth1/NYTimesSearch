@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/begin_date"
+        android:id="@+id/tvBeginDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_order"
+        android:id="@+id/tvSortOrder"
+        android:layout_below="@+id/etDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news_interests"
+        android:id="@+id/tvInterests"
+        android:layout_below="@+id/tbSortOrder"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDate"
+        android:hint="@string/date_hint"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/cbArts"
+        android:layout_alignStart="@+id/cbArts"
+        android:layout_alignRight="@+id/cbFashions"
+        android:layout_alignEnd="@+id/cbFashions" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/arts"
+        android:id="@+id/cbArts"
+        android:checked="false"
+        android:layout_alignTop="@+id/tvInterests"
+        android:layout_toRightOf="@+id/tvInterests"
+        android:layout_toEndOf="@+id/tvInterests" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fashions"
+        android:id="@+id/cbFashions"
+        android:checked="false"
+        android:layout_below="@+id/cbArts"
+        android:layout_alignLeft="@+id/cbArts"
+        android:layout_alignStart="@+id/cbArts" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sports"
+        android:id="@+id/cbSports"
+        android:checked="false"
+        android:layout_below="@+id/cbFashions"
+        android:layout_alignLeft="@+id/cbFashions"
+        android:layout_alignStart="@+id/cbFashions" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/newest"
+        android:id="@+id/tbSortOrder"
+        android:layout_alignTop="@+id/tvSortOrder"
+        android:textOff="@string/newest"
+        android:textOn="@string/oldest"
+        android:layout_alignLeft="@+id/etDate"
+        android:layout_alignStart="@+id/etDate"
+        android:background="@drawable/rectangle_button"
+        android:padding="0dp"
+        android:textColor="@color/colorWhite"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/save_filter"
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/cbSports"
+        android:layout_toLeftOf="@+id/cbSports"
+        android:layout_toStartOf="@+id/cbSports"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rectangle_button"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="@string/clear_settings"
+        android:id="@+id/btnClear"
+        android:background="@drawable/rectangle_button"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_toRightOf="@+id/tbSortOrder"
+        android:textColor="@color/colorWhite"
+        android:layout_toEndOf="@+id/tbSortOrder" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ibCalendar"
+        android:layout_alignBottom="@+id/etDate"
+        android:layout_alignTop="@+id/etDate"
+        android:layout_toRightOf="@+id/etDate"
+        android:src="@drawable/ic_calendar"
+        android:scaleType="fitXY"
+        android:padding="0dp"
+        android:background="@android:color/transparent"
+        android:adjustViewBounds="true"/>
+
+</RelativeLayout>

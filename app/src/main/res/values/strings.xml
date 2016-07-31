@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NYTimesSearch</string>
+    <string name="menu_search">Search Articles...</string>
+    <string name="menu_filter">Filter</string>
+    <string name="share_article">Share</string>
+    <string name="search_hint">Search...</string>
+    <string name="key">18cc4321ed1ccda8cb3faf8439d10fe5:15:74354171</string>
+    <string name="textFont">sans-serif</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="begin_date">Begin Date</string>
+    <string name="sort_order">Sort Order</string>
+    <string name="news_interests">News Interests</string>
+    <string name="arts">Arts</string>
+    <string name="fashions"><![CDATA[Fashions & Style]]></string>
+    <string name="sports">Sports</string>
+    <string name="newest">newest</string>
+    <string name="oldest">oldest</string>
+    <string name="save_filter">SAVE</string>
+    <string name="clear_settings">CLEAR</string>
+    <string name="end_date">End Date</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="date_hint">YYYY/MM/DD</string>
+</resources>
